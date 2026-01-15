@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// function child(){
+//     console.log("child call");
+    
+// }
+
+// function parent(d) {
+//     d();
+// }
+
+// parent(()=>{
+//     console.log("child call");
+    
+// })
+
+
+
+function parent(d){
+    let result =d();
+    return result           //map // forEach (no)
+
+}
+
+let res = parent(()=>{
+    console.log("child call");
+    return true
+    
+}
+
+)
+
+console.log(rel);
+
+
+
+// function parent(d){
+//     let result = d("neha")
+// }
+
+// let res = parent ((n)=>{
+//     console.log("child call" +  n);
+//     return true
+    
+// })
+
+// console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
