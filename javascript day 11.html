@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Q1 => true ko print koro
+
+        let arr=[
+            {name:"rohit", active: true},
+            {name:"sumit", active: false},
+            {name:"sakib", active: true},
+            {name:"adnan", active: false},
+    ]
+    let act =arr.filter((item)=>{
+        return item.active == true
+                
+            })
+            console.log(act);
+
+//===================================================================================================
+
+ //Q2 => false ko print koro           
+
+         let arr1=[
+            {name:"rohit", active: true},
+            {name:"sumit", active: false},
+            {name:"sakib", active: true},
+            {name:"adnan", active: false},
+        ]
+    
+         let act1 =arr1.filter((item)=>{
+          return !(item.active )
+                
+            })
+            console.log(act1);  
+//======================================================================================
+
+ //Q4=> jisme 5 word ho wo print ho 
+
+           let arr2=["raj", "neha", "bulbul", "rahul", "kunal"]
+           let act2= arr2.map((item)=>{
+            if(item.length ===5)
+           {
+            return `${item}`
+           }
+           }) 
+           console.log(act2);
+//=========================================================================================
+
+//Q5=> "A" se jo start ho wo print ho 
+
+           let arr3 =["Apple","banana","mango","Avocado"]
+           let ace =arr3.filter((item)=>{
+           return item [0]=="A"
+           })
+           console.log(ace);
+           
+
+//==============================================================================================
+//Q6=>iska even numbar print ho 
+
+         let arr4=[20,30,40,50,60]
+         let indexRes = arr4.filter((item,index)=>{
+            return index % 2==0
+         })
+         console.log(indexRes);
+
+
+         
+           
+
+
+
+    </script>
+</body>
+</html>
