@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                  <!-- forEach -->
+ <script>
+    let arr1 = [2,3,4,5,6,7];
+    arr1.forEach((item,index ,arr )=>{
+        console.log(`${index}=${item} and arr is ${arr}`);
+    })
+
+    let arr2 =[2,3,4,5,6,7]
+    arr2.forEach((value, index,arr)=>{
+       arr[index]=value*2
+    })
+    console.log(arr2);
+
+// Q3=> 3 ketni baar h wo print ho 
+
+    let arr3 =[2,3,4,5,3,6,7,3,6,3]
+    let count=0
+    arr3.forEach((item)=>{
+      if(item ===3){
+        count=count+1
+      }
+    })
+    console.log(count);
+    
+
+//Q4=> print ye ho [1,2,3,4,5,6]
+
+    let arr4=[[1,2],[3,4],[5,6]]
+
+ </script>
+</body>
+</html>
