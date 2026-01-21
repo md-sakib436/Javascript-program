@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //.map//
+      
+           // clone //
+   //Q1=>
+
+    // const arr7=[1,2,3];
+    // const clone= arr7.map ( item => item);
+    // console.log(clone);
+    //   arr7.push(4)
+    //   console.log(arr7);
+    //   console.log(clone);
+
+//==============================================================================
+
+//Q2=>
+
+    // const arr8=[1,2,3];
+    // const clone = arr8.filter(item=> item);  
+    // console.log(clone);
+    // arr8.push(4)
+    // console.log(arr8);
+    //   console.log(clone);
+
+//=================================================================================
+
+//Q3=>
+
+    // const arr9=[1,[2,3]];
+    // const clone = structuredClone(arr9)
+    // clone [1][0] =99;
+    // console.log(arr9);  //[1,[2,3]]
+    // console.log(clone); //[1,[99,3]]
+
+//============================================================================
+
+//Q4=>
+
+    // const arr10 =[1,[2,3]];
+    // const clone = json.parse(json.stringify(arr10));
+    // clone[1][0]=99;
+    // console.log(arr10); //[1[2,3]]
+    // console.log(clone); //[1,[99,3]]
+    
+ //====================================================================================
+ 
+ //Q5=>
+
+    let ddd = ["neha","react",45,21]
+    console.log(ddd[0]);
+    let obj ={
+        name:"neha",
+        lastName:"arora",
+        subject:"react",
+        marks: 45,
+        age:21,
+        address:{
+            city:"dehli",
+             pin:1234
+         // "pin cod":1234
+        },
+        check:function(){
+            console.log(this);
+            
+        },
+        fullName:function(){
+           console.log(`my name is ${this.name} and lastName${this.lastName}`);
+        },
+        arr:["apple","mango"]
+    }
+        // console.log(obj. address.city);
+        // console.log(obj["address"]["pin cod"]);
+        // obj.fullName();
+        obj.check();
+        obj,arr[1]
+    
+
+    </script>
+</body>
+</html>
