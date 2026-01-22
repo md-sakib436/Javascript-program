@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                           // obj discharing
+//Q1=> 
+        let obj1 = {
+         name :"rahul",
+         subject :"node",
+         marks :23,
+         age :21
+         }
+
+         let{name,subject,marks,age}=obj1
+         console.log(name);                  // obj discharing
+         console.log(subject);
+
+        //  let name = obj1.name
+        //  console.log(name);
+
+        //  let subject = obj1.subject
+        //  console.log(subject);
+    //==================================================================================     
+    //Q2=>            
+            
+    // let ddd = ["neha","react",45,21]
+    // console.log(ddd[0]);
+    // let obj ={
+    //     name:"neha",
+    //     lastName:"arora",
+    //     subject:"react",
+    //     marks: 45,
+    //     age:21,
+    //     address:{
+    //         city:"dehli",
+    //          pin:1234
+    //      // "pin cod":1234
+    //     },
+    //     check:function(){
+    //         console.log(this);
+            
+    //     },
+    //     fullName:function(){
+    //        console.log(`my name is ${this.name} and lastName${this.lastName}`);
+    //     },
+    //     arr:["apple","mango"]
+    // }
+    //     // console.log(obj. address.city);
+    //     // console.log(obj["address"]["pin cod"]);
+    //     // obj.fullName();
+    //     obj.check();
+    //     obj,arr[1] 
+
+    //==============================================================================
+
+    //Q3=> 
+
+        let key ="city"
+        let address={
+            city:"dehli",
+            pin : 1234
+        }
+        console.log(address[key]);
+    //================================================================================    
+    //Q4=>  arr Mathad =(arr.sort());
+    // aman ,belal ,kunal,mohit,rshul, sumit
+
+    let arr1 =["sumit","mohit","rahul","kunal","aman","belal"]
+      console.log(arr1.sort());
+      console.log(arr1.reverse());
+      
+    //=================================================================================
+    //Q5=>
+    let arr2 =["sumit","mohit","rahul","kunal","aman","belal"]
+     arr2.pop()
+     console.log(arr2);
+
+     //return =>
+     let arr3 =["sumit","mohit","rahul","kunal","aman","belal"]
+    let d= arr3.pop()
+    console.log(d);
+    
+
+      
+      
+        
+         
+
+
+    </script>
+</body>
+</html>
