@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let arr2 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //  arr2.pop()
+    //  console.log(arr2);
+
+    //  //return =>
+    //  let arr3 =["sumit","mohit","rahul","kunal","aman","belal"]
+    // let d= arr3.pop()
+    // console.log(d);
+
+
+    //  //push//
+    // let arr4 =["sumit","mohit","rahul","kunal","aman","belal"]
+    // let a = arr4.push("neha")
+    // console.log(a);
+
+    // let arr5 =["sumit","mohit","rahul","kunal","aman","belal"]
+    // let b = arr5.push("neha")
+    // console.log(b);
+    
+
+    // //shift//   aage se delete karta hai
+
+    //  let arr6 =["sumit","mohit","rahul","kunal","aman","belal"]
+
+    //   arr6.shift("sumit")
+    //   console.log(arr6);
+      
+      
+    // //  unshift  agge se add karta hai
+        
+    //  let arr7 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //  arr7.unshift("neha")
+    //  console.log(arr7);
+
+    
+    //  //Q=>
+    //  //  add ho jaye => ["sumit","mohit","rahul","kunal","aman","belal"1,2,3,4,5,6,7]
+
+    //   let arr8 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //   let arr9 =[1,2,3,4,5,6,7]
+
+    //   let arr10 =arr8.concat(arr9)
+    //   console.log(arr10);
+
+    //  add ho jaye => ["sumit","mohit","rahul","kunal","aman","belal"1,2,3,4,5,6,7,98,99,96,77]
+
+    //   let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+
+    //   let arr13 =arr11.concat(arr12,arr14)
+    //   console.log(arr13);
+
+    //=================================================================================================
+  
+    // sumit mohit rahul  kunal aman belal mila tint  => sab me spesh ho jaye 
+
+    //   let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+
+    //   let arr13 =arr11.concat("mila,tina")
+    //   console.log(arr13);
+
+    //   let arr15=arr11.join(" ")
+    //   console.log(arr15);
+
+    //=======================================================================================================  
+    
+     // sumit mohit rahul  kunal aman belal mila tint  => sab k bech me / ho jaye 
+    //   let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+
+    //   let arr13 =arr11.concat("mila,tina")
+    //   console.log(arr13);
+
+    //   let arr15=arr11.join("/")
+    //   console.log(arr15);
+
+     //====================================================================================================
+
+     // silice( start,end)  =side se add karta hai lasat se add karta hai
+     // mohit,rahul,kunal => ye print ho
+
+    //       let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //      //              1       2        3      4       5       6
+    //      //             -6       -5      -4      -3     -2       -1
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+    //   let arr13 =arr11.concat("mila,tina")
+    //   console.log(arr13);
+
+      // silice( start,end) //
+
+    //  arr15=arr11.slice(1,4)
+    //  console.log(arr15);
+
+
+    //  let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //      //              1       2        3      4       5       6
+    //      //             -6       -5      -4      -3     -2       -1
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+    //   let arr13 =arr11.concat("mila,tina")
+    //   console.log(arr13);
+
+    // // silice( start,end)//
+
+    //  arr15=arr11.slice(-4,-1)
+    //  console.log(arr15);
+
+     //===============================================================================================
+
+     //splice(start,how many delet ,new values)
+    // aur beach se add bhi karta hain
+
+    //=> sumit ,mohit rahul, kunal, aman, belal
+    //=> sumit ,mohit neha, mena, aman, belal
+         
+    //  let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //      //              1       2        3      4       5       6
+    //      //             -6       -5      -4      -3     -2       -1
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+    //   let arr13 =arr11.concat("mila,tina")
+    //   console.log(arr13);
+
+    //   arr11.splice(2,0,"neha" ,"mena")
+    //   console.log(arr11);
+
+
+    //   let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+    //      //              1       2        3      4       5       6
+    //      //             -6       -5      -4      -3     -2       -1
+    //   let arr12 =[1,2,3,4,5,6,7]
+    //   let arr14 =[98,99,96,77]
+    //   let arr13 =arr11.concat("mila,tina")
+    //   console.log(arr13);
+
+    //   arr11.splice(2,2,"neha" ,"mena")   // 2 se delete ho aur 2 delete ho 
+    //   console.log(arr11);
+
+
+    let arr11 =["sumit","mohit","rahul","kunal","aman","belal"]
+         //              1       2        3      4       5       6
+         //             -6       -5      -4      -3     -2       -1
+      let arr12 =[1,2,3,4,5,6,7]
+      let arr14 =[98,99,96,77]
+      let arr13 =arr11.concat("mila,tina")
+      console.log(arr13);
+      
+      let newSlice= arr11.splice(2,3,"neha" ,"mena") 
+      console.log(newSlice);
+      
+
+    </script>
+</body>
+</html>
