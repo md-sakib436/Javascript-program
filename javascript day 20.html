@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                //Q1=>
+        // let arr20 =[3,2,7,9,4,6] 
+        // // [4,16,36] pahle even number ho us k baad uska square chaiye
+        // let result = [];
+
+        //  for (let i = 0; i < arr20.length; i++) {
+        //  if (arr20[i] % 2 === 0) {
+        //   result.push(arr20[i]);           // even number
+        //  result.push(arr20[i] * arr20[i]); // uska square
+        //  }
+        // }
+
+        //  console.log(result);
+
+
+         let a="sakib"
+         function data(){
+            console.log(a);
+            
+         }
+         data()
+
+         function parent(){
+            let b = "kunal"
+            function child(){
+                let b ="neha"  //ye agar nahi hota to upar jakar dekhrga aur upar mil jayega to upar wala print kar dega
+                console.log(b);
+                
+            }
+            child()
+         }
+         parent()
+
+
+         
+
+         function increment(){
+            let counter=0
+            function childcounter() {
+                counter=counter+1
+                return counter;
+            }
+            return childcounter;
+         }
+        //  let result = increment()
+        //  //console.log(result);
+        //  let dd = result ()
+        //  let dd1=result()
+        //  console.log(dd);
+        //  console.log(dd1);
+
+
+         /////////
+
+
+        //  let count = 1
+        //  function counter(){
+        //     console.log(count++);
+        //  }
+        //  count=20
+        //  counter()
+        //  counter()
+        //  counter()
+
+
+         function counter(){
+            let count =0
+            function childCounter(){
+                count=count+1
+                // console.log(count); //
+                return count
+                
+            }
+          return  childCounter
+         }
+        let result= counter()
+       console.log(result);
+        // result() //
+        // result() //
+        // result() //
+        let fainalresult=result()
+        console.log(fainalresult);
+        
+         
+         
+         
+    </script>
+</body>
+</html>
