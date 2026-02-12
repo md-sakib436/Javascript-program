@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+                               //closers//
+                               //lascascop//
+        //  function data (){
+        //     let a ="neha"
+        //     console.log(a);
+        //  }            
+        //  data()
+
+        //  function parent(){
+        //     let b = "neha"
+        //     function child(){
+
+        //     console.log(b); 
+        //     }
+        //     child()
+        //  }
+        //  parent()
+        //==========================================================================
+          
+                         //globalscop
+
+        //  let counter=0
+        //  function increment(){
+        //     counter=counter+1
+        //     console.log(counter);
+        //  }
+        //  increment();
+        //  increment();
+        //  increment();
+        //===========================================================================
+
+                             //closers
+
+        //  function increment(){
+        //     let counter=0
+        //     function childcounter(){
+        //         counter=counter+1
+        //         console.log(counter);
+        //     }
+        //     return childcounter
+        //  }
+        //  let result =increment()
+        //  result()
+        //  result()
+        //  result()
+        //============================================================================
+
+
+        //  function increment(){
+        //     let counter=0
+        //     function childcounter(){
+        //         counter=counter+1
+        //       return counter;
+        //     }
+        //     return childcounter
+        //  }
+        //  let result =increment()
+        //  console.dir(result);
+
+        //===========================================================================
+
+
+         function increment(){
+            let counter=0
+            function childcounter(){
+                counter=counter+1
+              return counter;
+            }
+            return childcounter
+         }
+         let result =increment()
+         let dd = result()
+         let dd2 = result()
+
+         console.log(dd);
+         console.log(dd2);
+         
+         
+         
+
+    </script>
+</body>
+</html>
