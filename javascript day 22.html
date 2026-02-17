@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+              <!-- promise -->
+    <script>
+    //     let condtion = true
+    // let prom = new Promise((resolve,reject)=>{
+    //   if(condtion){
+    //     resolve("promise resolve")
+    //   }else{
+    //     reject("promise reject")
+    //   }
+    // })
+    // console.log(prom);
+
+    //=================================================================
+  //   function prom(condtion){
+  //   return new Promise((resolve,reject)=>{
+  //     if(condtion){
+  //       resolve("promise resolve")
+  //     }else{
+  //       reject("promise reject")
+  //     }
+  //   })
+  //   }
+  //   function onFull(result){
+  //   console.log(result);
+  
+  //  }
+  //  function onRaj(err){
+  //  console.log(err);
+  
+  // }
+  // prom(true).then(onFull).catch(onRaj)
+    //(false)
+    // console.log(prom(true));
+    
+//===================================================================================
+    
+          // API
+  
+  // fetch("https://jsonplaceholder.typicode.com/users")
+  // .then((Response)=>{
+  //   return Response.json();
+  // }).then((result)=>{
+  //   console.log(result);
+    
+  // })
+
+  //================================================================================
+
+  fetch("./demo.text")
+  .then((Response)=>{
+    return Response.text();
+  }).then((result)=>{
+    console.log(result);
+    
+  })
+
+//===================================================================================
+
+  let student={
+    name:"sakib",
+    email:"sakib@gmail.com",
+    age:18
+  }
+  fetch("https://jsonplaceholder.typicode.com/users",{
+    method:"POST",
+    headers:{
+      "content-type":"application/json"
+    },
+    body: JSON.stringify(student)
+  })
+  .then((Response)=>{
+    return Response.text();
+                 //.json();
+  }).then((result)=>{
+    console.log(result);
+    
+  })
+
+   </script>
+</body>
+</html>
